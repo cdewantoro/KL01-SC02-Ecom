@@ -1,0 +1,116 @@
+/*  ################# untuk navigasi  ################# */
+
+header {
+    position: fixed;
+    /* background-color: #0D6EFD; */
+    width: 100%;
+    height: 161px;
+    overflow:hidden;
+    margin: 0 auto;
+}
+.topMenu {
+    background-color: #0D6EFD;
+    height:79px;
+    width: 100%;
+}
+.midMenu {
+    height:97px;
+    width: 100%;
+}
+
+.bgBiru {
+    background-color: #0D6EFD;
+    color:#ffffff;
+}
+.bgPutih {
+    background-color: #ffffff;
+    color:#0D6EFD;
+}
+.wrap {
+    display:flex;
+    justify-content: center;
+}
+.topNav {
+    width:80%;
+    display:flex;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 20px 0;
+    color: #ffffff;
+    /* background-color: aqua; */
+}
+
+.topNav ul {
+    display: inline-block;
+}
+
+.topNav ul li {
+    display: inline-block;
+    padding-right: 20px;
+}
+.topNav ul li a {
+    color: #ffffff;
+}
+.topNav ul li a:hover {
+    color: greenyellow
+}
+
+/*  ################# midNav   ################# */
+
+.midNav {
+    width:80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.midNav > .user {
+    display: inline-block;
+}
+.midNav > .left h1 {
+    display: inline-block;
+    
+    padding: 10px 10px 10px 0;
+}
+.bgBiru .midNav > .left h1 {
+    border-right: 1px solid #ffffff;
+}
+.bgPutih .midNav > .left h1 {
+    border-right: 1px solid #0D6EFD;
+}
+
+.midNav > .left h2 {
+    display: inline-block;
+    padding: 10px 0 10px 10px;
+}
+.midNav > .right input {
+    width:730px;
+    padding: 5px;
+}
+.midNav > .right button {
+    padding: 5px;
+}
+
+/* ################# untuk footer ################# */
+
+footer {
+    background-color: #0D6EFD;
+    width: 100%;
+    height: 270px;
+    color: #ffffff;
+    margin: 0 auto;
+}
+.foot {
+    display:flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+.wrap h1 {
+    padding-top:20px
+}
+.btnSosMed {
+    padding:20px 0;
+    text-align: center;
+}
+.btnSosMed img {
+    padding-right: 20px;
+}
