@@ -90,6 +90,17 @@ header {
     padding: 5px;
 }
 
+/* ################# untuk content ################# */
+
+content {
+    width:80%;
+    margin: auto;
+    display:block;
+}
+.marginContent {
+    padding : 180px 0 20px 0;
+}
+
 /* ################# untuk footer ################# */
 
 footer {
