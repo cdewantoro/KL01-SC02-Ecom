@@ -35,9 +35,11 @@
                     <h2>User</h2>
                 </div>
                 <div class="right">
-                    <input type="text" value="search product" class="searchProd" />
-                    <button>cart</button>
-                    <button>Login</button>
+                    <div class="searchProd">
+                    <input type="text" value="search product"  /><button><img src="images/icoMagnifier.svg"></button>
+                    </div>
+                    <button class="btnCart"><img src="images/icoCart.svg" width="26" height="26"></button>
+                    <button class="btnLogin">Login</button>
                 </div>
             </div>
         </div>
@@ -46,25 +48,49 @@
 
 <!-- ################# Mulai Content #################  -->
 <content class="marginContent">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil sed delectus qui voluptas provident dolorum tenetur atque officia aspernatur repellendus corporis eum rem a explicabo autem voluptates, debitis vero et?</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil sed delectus qui voluptas provident dolorum tenetur atque officia aspernatur repellendus corporis eum rem a explicabo autem voluptates, debitis vero et?</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil sed delectus qui voluptas provident dolorum tenetur atque officia aspernatur repellendus corporis eum rem a explicabo autem voluptates, debitis vero et?</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil sed delectus qui voluptas provident dolorum tenetur atque officia aspernatur repellendus corporis eum rem a explicabo autem voluptates, debitis vero et?</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil sed delectus qui voluptas provident dolorum tenetur atque officia aspernatur repellendus corporis eum rem a explicabo autem voluptates, debitis vero et?</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil sed delectus qui voluptas provident dolorum tenetur atque officia aspernatur repellendus corporis eum rem a explicabo autem voluptates, debitis vero et?</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil sed delectus qui voluptas provident dolorum tenetur atque officia aspernatur repellendus corporis eum rem a explicabo autem voluptates, debitis vero et?</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil sed delectus qui voluptas provident dolorum tenetur atque officia aspernatur repellendus corporis eum rem a explicabo autem voluptates, debitis vero et?</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil sed delectus qui voluptas provident dolorum tenetur atque officia aspernatur repellendus corporis eum rem a explicabo autem voluptates, debitis vero et?</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil sed delectus qui voluptas provident dolorum tenetur atque officia aspernatur repellendus corporis eum rem a explicabo autem voluptates, debitis vero et?</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil sed delectus qui voluptas provident dolorum tenetur atque officia aspernatur repellendus corporis eum rem a explicabo autem voluptates, debitis vero et?</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil sed delectus qui voluptas provident dolorum tenetur atque officia aspernatur repellendus corporis eum rem a explicabo autem voluptates, debitis vero et?</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil sed delectus qui voluptas provident dolorum tenetur atque officia aspernatur repellendus corporis eum rem a explicabo autem voluptates, debitis vero et?</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil sed delectus qui voluptas provident dolorum tenetur atque officia aspernatur repellendus corporis eum rem a explicabo autem voluptates, debitis vero et?</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil sed delectus qui voluptas provident dolorum tenetur atque officia aspernatur repellendus corporis eum rem a explicabo autem voluptates, debitis vero et?</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil sed delectus qui voluptas provident dolorum tenetur atque officia aspernatur repellendus corporis eum rem a explicabo autem voluptates, debitis vero et?</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil sed delectus qui voluptas provident dolorum tenetur atque officia aspernatur repellendus corporis eum rem a explicabo autem voluptates, debitis vero et?</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil sed delectus qui voluptas provident dolorum tenetur atque officia aspernatur repellendus corporis eum rem a explicabo autem voluptates, debitis vero et?</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil sed delectus qui voluptas provident dolorum tenetur atque officia aspernatur repellendus corporis eum rem a explicabo autem voluptates, debitis vero et?</p>
+
+        <div class="containerSpot">
+            <div class="spotBanner"><img src="../images/banner00.jpg" height="385"></div>
+            <div class="prev">
+            <img src="../images/icoArrPrev.svg" alt=""></div>
+            <div class="next"><img src="../images/icoArrNext.svg" alt=""></div>
+            <div class="dotSlider">
+                <div class="dotSliderFlex">
+                        <div class="icoSlider"><img src="../images/icoSliderNoActive.svg"></div>
+                        <div class="icoSlider"><img src="../images/icoSliderNoActive.svg"></div>
+                        <div class="icoSlider"><img src="../images/icoSliderNoActive.svg"></div>
+                        <div class="icoSlider"><img src="../images/icoSliderActive.svg"></div>
+                </div>
+            </div>
+        </div>
+    <div class="spotDiskon">
+        <div class="spotDiskonHeader">
+            <h1>Diskon</h1>
+            <div class="diskCampHead">12.12</div>
+        </div>
+        <div class="spotDiskonHilite">
+            <div class="spotDiskonItem">
+                <div class="spotDiskonDesc">
+                    <h3>Judul Produk</h3>
+                    <h4>Rp. 100.000</h4>
+                    <div class="btnBeli">Beli</div>
+                </div>
+            </div>
+            <div class="spotDiskonItem">
+                <div class="spotDiskonDesc">
+                <h3>Judul Produk</h3>
+                <h4>Rp. 100.000</h4>
+                </div>
+            </div>
+            <div class="spotDiskonItem">
+                <div class="spotDiskonDesc">
+                <h3>Judul Produk</h3>
+                <h4>Rp. 100.000</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </content>
 <!-- ################# Mulai Footer #################  -->
 
