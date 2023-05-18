@@ -1,0 +1,394 @@
+/*  ################# untuk navigasi  ################# */
+
+header {
+    position: fixed;
+    /* background-color: #0D6EFD; */
+    width: 100%;
+    height: 161px;
+
+    margin: 0 auto;
+    z-index: 999;
+}
+.topMenu {
+    background-color: #0D6EFD;
+    height:79px;
+    width: 100%;
+}
+.midMenu {
+    height:97px;
+    width: 100%;
+}
+
+.bgBiru {
+    background-color: #0D6EFD;
+    color:#ffffff;
+}
+.bgPutih {
+    background-color: #ffffff;
+    color:#0D6EFD;
+}
+.wrap {
+    display:flex;
+    justify-content: center;
+}
+.topNav {
+    width:80%;
+    display:flex;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 20px 0;
+    color: #ffffff;
+    /* background-color: aqua; */
+}
+
+.topNav ul {
+    display: inline-block;
+}
+
+.topNav ul li {
+    display: inline-block;
+    padding-right: 20px;
+}
+.topNav ul li a {
+    color: #ffffff;
+}
+.topNav ul li a:hover {
+    color: greenyellow
+}
+
+/*  ################# midNav   ################# */
+
+.midNav {
+    width:80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.midNav > .user {
+    display: inline-block;
+}
+.midNav > .left h1 {
+    display: inline-block;
+    
+    padding: 10px 10px 10px 0;
+}
+.bgBiru .midNav > .left h1 {
+    border-right: 1px solid #ffffff;
+}
+.bgPutih .midNav > .left h1 {
+    border-right: 1px solid #0D6EFD;
+}
+
+.midNav > .left h2 {
+    display: inline-block;
+    padding: 10px 0 10px 10px;
+}
+.midNav > .right input {
+    width:680px;
+    padding: 5px;
+}
+.midNav > .right button {
+    padding: 5px;
+}
+
+.right {
+    display: flex;
+    gap: 1rem;
+}
+
+.cart {
+    border: 0.1rem solid white;
+    width: 4rem;
+    text-align: center;
+    border-radius: 0.4rem;
+}
+
+.cart i {
+    font-size: 2rem;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    width: auto;
+    height: auto;
+    margin-left: 1rem;
+}
+
+.user-profile:hover > .user-wrapper {
+    display: block;
+}
+
+
+.user-wrapper {
+    display: none;
+}
+
+.user-profile i:first-child {
+    font-size: 1rem;
+}
+
+.user-profile i:nth-child(2) {
+    font-size: 2rem;
+}
+
+.user-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    position: absolute;
+    background: #ffffff;
+    width: 13rem;
+    height: 13rem;
+    padding: 2.5rem 2rem;
+    right: 8rem;
+    top: 8rem;
+    box-shadow: 3px 3px 10px gray;
+
+    z-index: 9999;
+}
+
+.user-menu a {
+    color: black;
+    font-weight: bold;
+}
+
+.user-menu a:last-child {
+    color: red;
+}
+
+/* ################# untuk content ################# */
+
+content {
+    width:80%;
+    margin: auto;
+    display:block;
+}
+.marginContent {
+    padding : 180px 0 10px 0;
+}
+
+.header-image {
+    width: 100%;
+    height: 30vh;
+}
+
+.header-image img {
+    width: 100%;
+    height: 100%;
+}
+
+.diskon {
+    margin: 2rem 0;
+}
+
+.diskon-heading {
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+}
+
+.diskon-heading div:first-child {
+    font-size: 2rem;
+}
+
+.diskon-name {
+    background: #5097ff;
+    padding: 0.3rem 2rem;
+    border-radius: 0.4rem;
+}
+
+.diskon-name h3 {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.icon-wrapper {
+    display: flex;
+    gap: 0.5rem;
+    margin-left: 1.5rem;
+}
+
+.fa-circle {
+    font-size: 1rem;
+    color: #C4C4C4;
+}
+
+.diskon-item-container {
+    width: 100%;
+    height: 30vh;
+    margin: 1rem;
+}
+
+.diskon-item-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+    height: 100%;
+}
+
+.product-image {
+    height: 60%;
+    width: 100%;
+}
+
+.item {
+    background: #C4C4C4;
+    width: 30%;
+    height: 100%;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-top: 1rem;
+}
+
+.diskon-diskon {
+    width: 8.5rem;
+    position: absolute;
+    margin-left: -1rem;
+    margin-top: 1.5rem;
+}
+
+.product-detail {
+    background: #ffffff;
+    height: 40%;
+    padding: 1rem 2rem;
+    border: 0.5rem solid #C4C4C4;
+    border-radius: 0 0 1.1rem 1.1rem;
+}
+
+.product-detail h3 {
+    font-size: 2rem;
+}
+
+.product-detail p {
+    font-size: 1.05rem;
+    color: #333333;
+}
+
+.btn-wrapper {
+    margin-top: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.btn-wrapper button {
+    width: 9rem;
+    height: 2rem;
+    background: #5097ff;
+    color: #ffffff;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+.btn-wrapper i {
+    margin-left: 1rem;
+    font-size: 2rem;
+    color: #C4C4C4;
+}
+
+.diskon-item-slider {
+    width: auto;
+    height: auto;
+    background: #C4C4C4;
+    border-radius: 50%;
+}
+
+.fa-arrow-right {
+    margin: 0.9rem;
+    color: #ffffff;
+}
+
+.product {
+    margin: 2rem 0;
+}
+
+.product-heading {
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+}
+
+.product-heading div:first-child {
+    font-size: 2rem;
+}
+
+.icon-wrapper {
+    display: flex;
+    gap: 0.5rem;
+    margin-left: 1.5rem;
+}
+
+.fa-circle {
+    font-size: 1rem;
+    color: #C4C4C4;
+}
+
+.product-item-container {
+    width: 100%;
+    height: 60vh;
+}
+
+.product-item-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+    width: 100%;
+    height: 100%;
+}
+
+.product-item {
+    height: 45%;
+    width: 24%;
+}
+
+.product-small {
+    padding: 0.5rem 2rem;
+}
+
+.arrow-nav {
+    margin: 2.5rem 0 10rem 0;
+}
+
+.arrow-nav button {
+    width: 3.5rem;
+    height: 2.8rem;
+    border-radius: 0.8rem;
+    border: none;
+    background: #0D6EFD;
+    color: #ffffff;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-right: 0.5rem;
+}
+
+
+/* ################# untuk footer ################# */
+
+footer {
+    background-color: #0D6EFD;
+    width: 100%;
+    height: 270px;
+    color: #ffffff;
+    margin: 0 auto;
+}
+.foot {
+    display:flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+.wrap h1 {
+    padding-top:20px
+}
+.btnSosMed {
+    padding:20px 0;
+    text-align: center;
+}
+.btnSosMed img {
+    padding-right: 20px;
+}
