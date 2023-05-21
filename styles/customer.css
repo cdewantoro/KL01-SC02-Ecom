@@ -146,10 +146,12 @@ content {
     width:80%;
     margin: auto;
     display:block;
+
     /* border:1px solid fuchsia; */
 }
 .marginContent {
     padding : 180px 0 10px 0;
+
 }
 
 .product {
@@ -271,13 +273,55 @@ content {
     margin-right: 0.5rem;
 }
 
+
+.user-profile:hover > .user-wrapper {
+    display: block;
+    z-index: 10000000 !important;
+}
+
+.user-wrapper {
+    display: none;
+}
+
+.user-profile i:first-child {
+    font-size: 1rem;
+}
+
+.user-profile i:nth-child(2) {
+    font-size: 2rem;
+}
+
+.user-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    position: absolute;
+    background: #ffffff;
+    width: 13rem;
+    height: 10rem;
+    padding: 1rem 2.5rem 2rem 2.5rem;
+    right: 8rem;
+    box-shadow: 3px 3px 10px gray;
+    z-index: 9999;
+}
+
+.user-menu a {
+    color: black;
+    font-weight: bold;
+}
+
+.user-menu a:last-child {
+    color: red;
+}
+
+
 /* ################# untuk cart ################# */
 
 .containerCart {
     background: #FFFFFF;
     box-shadow: 0px 4px 24px rgba(0, 10, 44, 0.15);
     border-radius: 15px;
-    padding:30px
+    padding:30px;
 }
 
 .ctFlex {
@@ -344,6 +388,7 @@ content {
 
 .contRec {
     width:100%;
+    margin-bottom:50px;
 }
 
 .cardRec {

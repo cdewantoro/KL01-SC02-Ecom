@@ -2,6 +2,146 @@
     color: red !important;
 }
 
-footer {
+/* footer {
    margin-top: 10rem;
+} */
+
+.user-profile:hover > .user-wrapper {
+    display: block;
+    z-index: 10000000 !important;
+}
+
+.user-wrapper {
+    display: none;
+}
+
+.user-profile i:first-child {
+    font-size: 1rem;
+}
+
+.user-profile i:nth-child(2) {
+    font-size: 2rem;
+}
+
+.user-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    position: absolute;
+    background: #ffffff;
+    width: 13rem;
+    height: 10rem;
+    padding: 1rem 2.5rem 2rem 2.5rem;
+    right: 8rem;
+    box-shadow: 3px 3px 10px gray;
+    z-index: 9999;
+}
+
+.user-menu a {
+    color: black;
+    font-weight: bold;
+}
+
+.user-menu a:last-child {
+    color: red;
+}
+
+
+.cardRec {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 20px;
+}
+
+.cardRecItem {
+    display:block;
+    width: 23%;
+    border: 5px solid #BEBEBE;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+}
+
+.cardRecWrap {
+    display: flex;
+    flex-direction:column;
+}
+.cardRecTop {
+    display:block;
+    height: 213px;
+    background-color:#BEBEBE;
+    /* background-color: teal; */
+}
+.cardRecTop img {
+    border-radius: 20px 20px 0 0;
+}
+
+.cardRecBottom {
+    display:block;
+    height: 138px;
+    background: #ffffff;
+    border-radius: 0 0 20px 20px
+    /* background-color: red; */
+}
+
+
+.prodDetail {
+    padding: 1rem 1.6rem;
+    display:flex;
+    flex-direction:column;
+}
+
+.prodDetail h3 {
+    font-size: 2rem;
+}
+
+.prodDetail p {
+    font-size: 1.05rem;
+    color: #333333;
+}
+
+.cardRecBottom .btn-wrapper {
+    /* margin-top: 0.5rem; */
+    /* display: flex; */
+    align-items: center;
+}
+
+.cardRecBottom .btn-wrapper button {
+    /* width: 9rem; */
+    /* height: 2rem; */
+    background: #5097ff;
+    color: #ffffff;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+.cardRecBottom .btn-wrapper i {
+    margin-left: 1rem;
+    font-size: 2rem;
+    color: #C4C4C4;
+}
+
+
+/* ################# untuk footer ################# */
+
+footer {
+    background-color: #0D6EFD;
+    width: 100%;
+    height: 270px;
+    color: #ffffff;
+    margin: 0 auto;
+}
+.foot {
+    display:flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+.wrap h1 {
+    padding-top:20px
+}
+.btnSosMed {
+    padding:20px 0;
+    text-align: center;
+}
+.btnSosMed img {
+    padding-right: 20px;
 }
