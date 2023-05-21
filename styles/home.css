@@ -69,7 +69,6 @@ header {
 }
 .midNav > .left h1 {
     display: inline-block;
-    
     padding: 10px 10px 10px 0;
 }
 .bgBiru .midNav > .left h1 {
@@ -83,20 +82,66 @@ header {
     display: inline-block;
     padding: 10px 0 10px 10px;
 }
-.midNav > .right input {
-    width:730px;
-    padding: 5px;
-}
-.midNav > .right button {
-    padding: 5px;
+.midNav > .right {
+    display: flex;
 }
 
+.searchProd {
+    width:700px;
+    border-radius: 7px;
+    border:0px;
+    padding:2px;
+    background-color: #ffffff;
+    display:flex;
+    flex-direction: row;
+    text-justify: center;
+}
+
+.searchProd input {
+    padding: 2px 10px 2px 20px;
+    width:680px;
+    border: 0;
+}
+.searchProd button {
+    background: #0D6EFD;
+    border-radius: 7px;
+    border:0px;
+    width:100px;
+    height:40px;
+}
+.searchProd button img {
+
+}
+
+.right .btnCart {
+    margin-left:10px;
+    border: 2px solid #FFFFFF;
+    border-radius: 7px;
+    padding:0 10px;
+    background:transparent;
+}
+
+.right .btnLogin {
+    margin-left:10px;
+    border: 2px solid #FFFFFF;
+    border-radius: 7px;
+    padding:0 10px;
+    background:transparent;
+    color: #ffffff;
+}
+
+.right .btnLogin:hover {
+    background:#ffffff;
+    color: #0D6EFD;
+
+}
 /* ################# untuk content ################# */
 
 content {
     width:80%;
     margin: auto;
     display:block;
+    border:1px solid fuchsia;
 }
 .marginContent {
     padding : 180px 0 10px 0;
@@ -299,7 +344,60 @@ content {
     font-weight: bold;
     margin-right: 0.5rem;
 }
+/* ######### untuk spot banner carousel ########## */
+.containerSpot {
+    position: relative;
+    z-index:-1;
+}
+.spotBanner {
 
+}
+.prev {
+    position:absolute;
+    left:0;
+    top:40%;
+}
+.next {
+    position:absolute;
+    right:0;
+    top:40%;
+}
+.dotSlider {
+    position:absolute;
+    bottom: 0;
+    width:100%;
+    margin:0 auto;
+}
+.dotSliderFlex {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.icoSlider {
+    display:inline-block;
+    padding-right:5px;
+}
+/* ################# untuk spot Diskon ################# */
+.spotDiskonHilite {
+    padding: 10px;
+}
+.spotDiskonItem {
+    width: 330px;
+    height: 395px;
+    background: #BEBEBE;
+    border: 5px solid #BEBEBE;
+    border-radius: 20px;
+    display:inline-block;
+}
+.spotDiskonWrap {
+    position:relative;
+    z-index:-1;
+}
+.spotDiskonDesc {
+    position: absolute;
+    bottom: 0;
+    background-color:#FFFFFF;
+}
 /* ################# untuk footer ################# */
 
 footer {

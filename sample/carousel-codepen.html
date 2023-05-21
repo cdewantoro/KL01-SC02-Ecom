@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 80%;
+            height: 300px;
+            position: relative;
+            background-color: aqua;
+        }
+        .gambar {
+            background-color: coral;
+            width:100%;
+            height:300px;
+        }
+        .prev {
+            position:absolute;
+            left:1%;
+            top:40%;
+        }
+        .next {
+            position:absolute;
+            right:1%;
+            top:40%;
+        }
+        .dotSlider {
+            position:absolute;
+            bottom: 0;
+            width:100%;
+            margin:0 auto;
+        }
+        .dotSliderFlex {
+            display:flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .icoSlider {
+            display:inline-block;
+            padding-right:5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="gambar"><img src="../images/banner00.jpg" height="300"></div>
+        <div class="prev">
+        <img src="../images/icoArrPrev.svg" alt=""></div>
+        <div class="next"><img src="../images/icoArrNext.svg" alt=""></div>
+        <div class="dotSlider">
+            <div class="dotSliderFlex">
+
+                    <div class="icoSlider"><img src="../images/icoSliderNoActive.svg"></div>
+                    <div class="icoSlider"><img src="../images/icoSliderNoActive.svg"></div>
+                    <div class="icoSlider"><img src="../images/icoSliderNoActive.svg"></div>
+                    <div class="icoSlider"><img src="../images/icoSliderActive.svg"></div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
