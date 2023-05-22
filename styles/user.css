@@ -5,7 +5,6 @@ header {
     /* background-color: #0D6EFD; */
     width: 100%;
     height: 161px;
-
     margin: 0 auto;
     z-index: 999;
 }
@@ -72,16 +71,16 @@ header {
     
     padding: 10px 10px 10px 0;
 }
-.bgBiru .midNav > .left h1 {
-    border-right: 1px solid #ffffff;
-}
-.bgPutih .midNav > .left h1 {
-    border-right: 1px solid #0D6EFD;
-}
 
-.midNav > .left h2 {
+.bgBiru .midNav > .left h2 {
     display: inline-block;
     padding: 10px 0 10px 10px;
+    border-left: 1px solid #ffffff;
+}
+.bgPutih .midNav > .left h2 {
+    display: inline-block;
+    padding: 10px 0 10px 10px;
+    border-left: 1px solid #0D6EFD;
 }
 .midNav > .right input {
     width:680px;
@@ -96,6 +95,29 @@ header {
     gap: 1rem;
 }
 
+.searchProd {
+    width:700px;
+    border-radius: 7px;
+    border:0px;
+    padding:2px;
+    background-color: #ffffff;
+    display:flex;
+    flex-direction: row;
+    text-justify: center;
+}
+
+.searchProd input {
+    padding: 2px 10px 2px 20px;
+    width:680px;
+    border: 0;
+}
+.searchProd button {
+    background: #0D6EFD;
+    border-radius: 7px;
+    border:0px;
+    width:100px;
+    height:40px;
+}
 .cart {
     border: 0.1rem solid white;
     width: 4rem;
@@ -118,6 +140,7 @@ header {
 
 .user-profile:hover > .user-wrapper {
     display: block;
+    margin-left:-5px;
 }
 
 .user-wrapper {
@@ -144,7 +167,6 @@ header {
     right: 8rem;
     top: 8rem;
     box-shadow: 3px 3px 10px gray;
-
     z-index: 9999;
 }
 
@@ -166,6 +188,185 @@ content {
 }
 .marginContent {
     padding : 180px 0 10px 0;
+}
+
+/* ######### untuk spot banner carousel ########## */
+.containerSpot {
+    position: relative;
+    z-index:-1;
+}
+.spotBanner {
+
+}
+.prev {
+    position:absolute;
+    left:10px;
+    top:45%;
+}
+.next {
+    position:absolute;
+    right:15px;
+    top:45%;
+}
+.dotSlider {
+    position:absolute;
+    bottom: 15px;
+    width:100%;
+    margin:0 auto;
+}
+.dotSliderFlex {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.icoSlider {
+    display:inline-block;
+    padding-right:5px;
+}
+/* ################# untuk spot Diskon ################# */
+.spotDiskonHilite {
+    padding: 10px;
+}
+.spotDiskonItem {
+    width: 330px;
+    height: 395px;
+    background: #BEBEBE;
+    border: 5px solid #BEBEBE;
+    border-radius: 20px;
+    display:inline-block;
+}
+.spotDiskonWrap {
+    position:relative;
+    z-index:-1;
+}
+.spotDiskonDesc {
+    position: absolute;
+    bottom: 0;
+    background-color:#FFFFFF;
+}
+
+/* ################# untuk prod recommend ################# */
+
+
+.contSpot {
+    width:100%;
+    margin-bottom:50px;
+    padding: 20px 0 20px 5px;
+    border:2px solid #0D6EFD;
+}
+
+.cardSpot {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 20px;
+}
+
+.cardSpotItem {
+    display:block;
+    width: 30%;
+    border: 5px solid #BEBEBE;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+}
+
+.cardSpotWrap {
+    display: flex;
+    flex-direction:column;
+}
+.cardSpotTop {
+    display:block;
+    height: 213px;
+    background-color:#BEBEBE;
+    /* background-color: teal; */
+}
+.cardSpotTop img {
+    border-radius: 20px 20px 0 0;
+}
+
+.cardSpotBottom {
+    display:block;
+    height: 138px;
+    background: #ffffff;
+    border-radius: 0 0 20px 20px
+    /* background-color: red; */
+}
+
+.contRec {
+    width:100%;
+    margin-bottom:50px;
+}
+
+.cardRec {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 20px;
+}
+
+.cardRecItem {
+    display:block;
+    width: 23%;
+    border: 5px solid #BEBEBE;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+}
+
+.cardRecWrap {
+    display: flex;
+    flex-direction:column;
+}
+.cardRecTop {
+    display:block;
+    height: 213px;
+    background-color:#BEBEBE;
+    /* background-color: teal; */
+}
+.cardRecTop img {
+    border-radius: 20px 20px 0 0;
+}
+
+.cardRecBottom {
+    display:block;
+    height: 138px;
+    background: #ffffff;
+    border-radius: 0 0 20px 20px
+    /* background-color: red; */
+}
+
+
+.prodDetail {
+    padding: 1rem 1.6rem;
+    display:flex;
+    flex-direction:column;
+}
+
+.prodDetail h3 {
+    font-size: 2rem;
+}
+
+.prodDetail p {
+    font-size: 1.05rem;
+    color: #333333;
+}
+
+.cardRecBottom .btn-wrapper {
+    /* margin-top: 0.5rem; */
+    /* display: flex; */
+    align-items: center;
+}
+
+.cardRecBottom .btn-wrapper button {
+    /* width: 9rem; */
+    /* height: 2rem; */
+    background: #5097ff;
+    color: #ffffff;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+.cardRecBottom .btn-wrapper i {
+    margin-left: 1rem;
+    font-size: 2rem;
+    color: #C4C4C4;
 }
 
 .header-image {

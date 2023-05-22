@@ -72,14 +72,15 @@ header {
     padding: 10px 10px 10px 0;
 }
 .bgBiru .midNav > .left h1 {
-    border-right: 1px solid #ffffff;
+    /* border-right: 1px solid #ffffff; */
 }
 .bgPutih .midNav > .left h1 {
-    border-right: 1px solid #0D6EFD;
+    
 }
 
 .midNav > .left h2 {
     display: inline-block;
+    border-left: 1px solid #ffffff;
     padding: 10px 0 10px 10px;
 }
 .midNav > .right {
@@ -108,9 +109,6 @@ header {
     border:0px;
     width:100px;
     height:40px;
-}
-.searchProd button img {
-
 }
 
 .right .btnCart {
@@ -209,7 +207,9 @@ content {
 
 .product-image {
     height: 60%;
+    /* height:213px; */
     width: 100%;
+    display: relative;
 }
 
 .item {
@@ -233,6 +233,7 @@ content {
 .product-detail {
     background: #ffffff;
     height: 40%;
+    /* height: 138px; */
     padding: 1rem 2rem;
     border: 0.5rem solid #C4C4C4;
     border-radius: 0 0 1.1rem 1.1rem;
@@ -269,10 +270,12 @@ content {
 }
 
 .diskon-item-slider {
-    width: auto;
-    height: auto;
+    /* width: auto;
+    height: auto; */
     background: #C4C4C4;
     border-radius: 50%;
+    width:2.6rem;
+    height:2.6rem;
 }
 
 .fa-arrow-right {
@@ -330,7 +333,7 @@ content {
 }
 
 .arrow-nav {
-    margin: 2.5rem 0 10rem 0;
+    margin: 2.5rem 0 8rem 0;
 }
 
 .arrow-nav button {
@@ -354,17 +357,17 @@ content {
 }
 .prev {
     position:absolute;
-    left:0;
-    top:40%;
+    left:10px;
+    top:45%;
 }
 .next {
     position:absolute;
-    right:0;
-    top:40%;
+    right:15px;
+    top:45%;
 }
 .dotSlider {
     position:absolute;
-    bottom: 0;
+    bottom: 15px;
     width:100%;
     margin:0 auto;
 }
@@ -398,6 +401,132 @@ content {
     bottom: 0;
     background-color:#FFFFFF;
 }
+
+/* ################# untuk prod recommend ################# */
+
+
+.contSpot {
+    width:100%;
+    margin-bottom:50px;
+    padding: 20px 0 20px 5px;
+    border:2px solid #0D6EFD;
+}
+
+.cardSpot {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 20px;
+}
+
+.cardSpotItem {
+    display:block;
+    width: 30%;
+    border: 5px solid #BEBEBE;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+}
+
+.cardSpotWrap {
+    display: flex;
+    flex-direction:column;
+}
+.cardSpotTop {
+    display:block;
+    height: 213px;
+    background-color:#BEBEBE;
+    /* background-color: teal; */
+}
+.cardSpotTop img {
+    border-radius: 20px 20px 0 0;
+}
+
+.cardSpotBottom {
+    display:block;
+    height: 138px;
+    background: #ffffff;
+    border-radius: 0 0 20px 20px
+    /* background-color: red; */
+}
+
+.contRec {
+    width:100%;
+    margin-bottom:50px;
+}
+
+.cardRec {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 20px;
+}
+
+.cardRecItem {
+    display:block;
+    width: 23%;
+    border: 5px solid #BEBEBE;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+}
+
+.cardRecWrap {
+    display: flex;
+    flex-direction:column;
+}
+.cardRecTop {
+    display:block;
+    height: 213px;
+    background-color:#BEBEBE;
+    /* background-color: teal; */
+}
+.cardRecTop img {
+    border-radius: 20px 20px 0 0;
+}
+
+.cardRecBottom {
+    display:block;
+    height: 138px;
+    background: #ffffff;
+    border-radius: 0 0 20px 20px
+    /* background-color: red; */
+}
+
+
+.prodDetail {
+    padding: 1rem 1.6rem;
+    display:flex;
+    flex-direction:column;
+}
+
+.prodDetail h3 {
+    font-size: 2rem;
+}
+
+.prodDetail p {
+    font-size: 1.05rem;
+    color: #333333;
+}
+
+.cardRecBottom .btn-wrapper {
+    /* margin-top: 0.5rem; */
+    /* display: flex; */
+    align-items: center;
+}
+
+.cardRecBottom .btn-wrapper button {
+    /* width: 9rem; */
+    /* height: 2rem; */
+    background: #5097ff;
+    color: #ffffff;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+.cardRecBottom .btn-wrapper i {
+    margin-left: 1rem;
+    font-size: 2rem;
+    color: #C4C4C4;
+}
+
+
 /* ################# untuk footer ################# */
 
 footer {
